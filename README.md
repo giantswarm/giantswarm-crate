@@ -15,12 +15,12 @@ https://blog.giantswarm.io/deploy-elastic-high-availability-sql-cluster-crate-we
 
 If you just want to run a Crate cluster just by itself as a separate service:
 
-1. Clone the [`swarm.json`](giantswarm-clojure/swarm.json) in this repo. 
+1. Clone the [`swarm.json`](giantswarm-crate/swarm.json) in this repo. 
 2. Run `swarm up`.
 
 __Note:__ You might need to [expose](https://docs.giantswarm.io/reference/swarm-json/#expose) port 4300 so you can use the Crate cluster from other services.
 
-Alternatively, copy the component from the swarm.json to your own and connect it to your other components as you see fit.
+Alternatively, copy the component from the [`swarm.json`](giantswarm-crate/swarm.json) to your own and connect it to your other components as you see fit.
 
 ### Scaling
 
