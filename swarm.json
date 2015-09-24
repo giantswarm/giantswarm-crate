@@ -1,0 +1,28 @@
+{
+  "name": "crate-cluster",
+  "components": {
+    "crate": {
+      "image": "crate",
+      "ports": [
+        4200,
+        4300
+      ],
+      "volumes": [
+        {
+          "path": "/data",
+          "size": "10 GB"
+        }
+      ],
+      "domains": {
+        "4200/tcp": [
+          "crate-admin.gigantic.io"
+        ]
+      },
+      "args": [
+        "crate",
+        "-Des.cluster.name=crate-cluster-one"
+      ],
+      "scale": {"min": 3, "placement": "one-per-machine"}
+    }
+  }
+}
