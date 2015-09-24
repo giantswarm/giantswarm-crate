@@ -14,9 +14,7 @@
         }
       ],
       "domains": {
-        "4200/tcp": [
-          "crate-admin.gigantic.io"
-        ]
+        "4200": "crate-admin.gigantic.io"
       },
       "args": [
         "crate",
