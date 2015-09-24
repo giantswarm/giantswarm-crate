@@ -4,7 +4,7 @@ This is a simple service definition that gets you an elastic Crate cluster with 
 
 Check out the full guide here:
 
-https://blog.giantswarm.io/BLA/
+https://blog.giantswarm.io/deploy-elastic-high-availability-sql-cluster-crate-weave/
 
 ## Prerequisites 
 
